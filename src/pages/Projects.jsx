@@ -73,7 +73,7 @@ const Projects = () => {
             id: 6,
             nom: "Escape Rooms",
             photo: escaperoom,
-            description: "Projet réalisé en groupe de cinq, qui fut notre premier développement full-stack... Je fus pour ma part dans l’équipe BackEnd, en charge de la création de l’API. Une fois l’API terminée, avec l’équipe FrontEnd qui avait terminé l’interface utilisateur, nous nous sommes répartit les tâches afin de lier l’API au FrontEnd.",
+            description: "Projet réalisé en groupe de cinq, qui fut notre premier développement full-stack. Je fus pour ma part dans l’équipe BackEnd, en charge de la création de l’API. Une fois l’API terminée, avec l’équipe FrontEnd qui avait terminé l’interface utilisateur, nous nous sommes répartit les tâches afin de lier l’API au FrontEnd.",
             demo: "",
             git: "https://github.com/gitdreadeurz/Escape-games-project",
             stacks: ["CSS", "NodeJS", "SQL", "React"]

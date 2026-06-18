@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #0B0A0C  !important;
+    background-color: #0B0A0C !important;
     color: #F4F2F7 !important;
     position: relative;
 }
@@ -40,8 +40,6 @@ html, body {
     margin-bottom: 3%;
 }
 
-
-
 .txtPresentation {
     display: flex;
     flex-direction: column;
@@ -49,8 +47,6 @@ html, body {
     justify-content: center;
     width: 50%;
 }
-
-
 
 .imgPresentation {
     width: 50%;
@@ -98,10 +94,6 @@ html, body {
     background-color: #0B0A0C;
     box-sizing: border-box; 
 }
-
-
-
-
 
 .name,
 .job {
@@ -151,7 +143,6 @@ html, body {
     padding: 0.5%;
     cursor: pointer;
     transition: 0.5s;
-    
 }
 
 .navbtn:hover{
@@ -183,8 +174,6 @@ html, body {
     width: 24px !important;
     height: 24px !important;
 }
-
-
 
 .apropos {
     font-size: 1.1rem;
@@ -319,9 +308,9 @@ html, body {
     font-size: 2.5rem;
 }
 
-
-
-
+/* ==========================================
+   MEDIA QUERIES (RESPONSIVE)
+   ========================================== */
 @media (max-width: 768px) {
 
     .apropos,
@@ -365,9 +354,7 @@ html, body {
         gap: 1rem;
     }
 
-    @media (max-width: 768px) {
-
-
+    /* Styles de présentation sur mobile */
     .presentation {
         flex-direction: column !important; 
         gap: 2rem;
@@ -427,7 +414,16 @@ html, body {
         text-align: center;
         padding: 0.8rem !important;
     }
-}
+
+    /* MASQUAGE DES FLÈCHES MANTINE CAROUSEL SU MOBILE */
+    .mantine-Carousel-control {
+        display: none !important;
+    }
+
+    .carousel-container {
+        padding: 0 15px; 
+        margin: 40px auto; 
+    }
 }
 
 .cyber-canvas-layer {
