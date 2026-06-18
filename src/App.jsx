@@ -8,7 +8,7 @@ function App() {
   
 
   return (
-    <Router>
+    <Router basename="/Portfolio-Yann-Monory>" >
         <CyberBackground/>
         <Routes>
           <Route path="/" element={<Projects />} />    
