@@ -14,7 +14,8 @@ import {
     faCss3Alt,
     faJs,
     faReact,
-    faNodeJs
+    faNodeJs,
+    faFigma
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faPrint, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -108,6 +109,7 @@ const Projects = () => {
                     <p className="stack"><FontAwesomeIcon icon={faReact} /> React</p>
                     <p className="stack"> <FontAwesomeIcon icon={faNodeJs} /> NodeJS</p>
                     <p className="stack"> <FontAwesomeIcon icon={faDatabase} /> SQL</p>
+                    <p className="stack"><FontAwesomeIcon icon={faFigma} />Figma</p>
                 </div>
                 <div className="btn">
                     <h3 className="navbtn" onClick={() => { setShowCV(false) }}>Mes Réalisations</h3>
