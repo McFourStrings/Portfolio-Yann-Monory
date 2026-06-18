@@ -8,7 +8,7 @@ function App() {
   
 
   return (
-    <Router basename="/Portfolio-Yann-Monory>" >
+    <Router basename={import.meta.env.BASE_URL} >
         <CyberBackground/>
         <Routes>
           <Route path="/" element={<Projects />} />    
