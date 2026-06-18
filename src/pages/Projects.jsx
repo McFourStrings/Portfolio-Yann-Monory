@@ -55,7 +55,7 @@ const Projects = () => {
             id: 4,
             nom: "Application de scoring pour jeu de fléchettes",
             photo: dart,
-            description: "Exercice réalisé dans le cadre de ma formation de DWWM, en groupe de trois. Il fallait que nous développions une application permettant de compter les scores de deux à quatre joueurs lors d’une partie de jeu de fléchettes... Le but de ce projet était de nous exercer à l’utilisation de React. ",
+            description: "Exercice réalisé dans le cadre de ma formation de DWWM, en groupe de trois. Il fallait que nous développions une application permettant de compter les scores de deux à quatre joueurs lors d’une partie de jeu de fléchettes. Le but de ce projet était de nous exercer à l’utilisation de React. ",
             demo: "https://mcfourstrings.github.io/Flechettes/",
             git: "https://github.com/McFourStrings/Flechettes",
             stacks: ["CSS", "React"]
