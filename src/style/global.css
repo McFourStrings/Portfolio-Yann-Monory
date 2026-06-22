@@ -308,19 +308,15 @@ html, body {
     font-size: 2.5rem;
 }
 
-/* ==========================================
-   MEDIA QUERIES (RESPONSIVE DE LA MAQUETTE)
-   ========================================== */
+
 @media (max-width: 768px) {
 
-    /* --- SECTION BANNIÈRE & LANGAGES --- */
-    
-    /* Centre parfaitement la liste des badges tech sur mobile */
+
     .projects .stacklist {
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: wrap !important; 
-        justify-content: center !important; /* RECTIFIÉ : Aligne au centre */
+        justify-content: center !important; 
         gap: 0.5rem !important;
         padding: 0 1rem !important;
         margin: 1rem auto 0 !important;
@@ -388,7 +384,7 @@ html, body {
     }
 
 
-    /* --- SECTION LE CV (CORRECTIF RADICAL) --- */
+ 
 
     .projects .apropos,
     .projects .cv {
@@ -398,11 +394,10 @@ html, body {
         box-sizing: border-box !important;
     }
 
-    /* Force le passage en colonne pour le CV (Compétences à gauche, Contact à droite) */
     .projects .row,
     .projects .cv .row {
         display: flex !important;
-        flex-direction: column !important; /* RECTIFIÉ : Force le comportement vertical */
+        flex-direction: column !important; 
         gap: 2rem !important;
         width: 100% !important;
     }
@@ -410,11 +405,10 @@ html, body {
     .projects .left,
     .projects .right {
         width: 100% !important;
-        flex: none !important; /* Supprime le ratio 2:1 du desktop */
+        flex: none !important; 
         box-sizing: border-box !important;
     }
 
-    /* Garde les deux blocs de compétences (Tech et Transversales) côte à côte */
     .projects .competences {
         display: flex !important;
         flex-direction: row !important;
