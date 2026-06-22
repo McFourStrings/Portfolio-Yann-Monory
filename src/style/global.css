@@ -311,6 +311,9 @@ html, body {
 /* ==========================================
    MEDIA QUERIES (RESPONSIVE DE LA MAQUETTE)
    ========================================== */
+/* ==========================================
+   MEDIA QUERIES (RESPONSIVE)
+   ========================================== */
 @media (max-width: 768px) {
 
     .apropos,
@@ -319,7 +322,7 @@ html, body {
         padding: 1.2rem;
     }
 
-    /* Le bloc global se met en colonne (Le conteneur mauve à droite passe sous le texte à gauche) */
+    /* Permet au bloc de droite (Contact/Hobbies) de passer sous le bloc principal */
     .row {
         flex-direction: column;
         gap: 1.5rem;
@@ -330,38 +333,39 @@ html, body {
         width: 100%;
     }
 
-    /* FIX COMPÉTENCES : Aligné côte à côte comme sur la capture */
+    /* FIX COMPÉTENCIES : Alignées côte à côte comme sur ton screenshot */
     .competences {
+        display: flex !important;
         flex-direction: row !important;
-        justify-content: space-between;
+        justify-content: space-between !important;
         align-items: flex-start;
         gap: 0.5rem;
     }
 
     .comptech,
     .comptrans {
-        width: 48%;
-        align-items: flex-start; /* Aligne les puces à gauche */
+        width: 48% !important;
+        align-items: flex-start !important; /* Aligne les puces de la liste à gauche */
     }
 
-    .competences .titres {
-        font-size: 1rem !important; /* Réduit la taille pour que ça tienne sur un écran mobile */
-        white-space: nowrap;
+    .competences .SousTitres {
+        font-size: 0.9rem !important; /* Évite que les titres se chevauchent */
+        white-space: normal;
     }
 
     .sepvert {
-        display: block; /* On garde la ligne verticale de séparation */
+        display: block !important; /* Force l'affichage de la ligne de séparation verticale */
         border-left: 1px solid #800080;
         height: auto;
         align-self: stretch;
     }
 
     .right {
-        text-align: left; /* Aligné à gauche comme sur la maquette */
+        text-align: left; /* Aligné à gauche pour un rendu propre */
     }
 
     .separateur {
-        display: block; /* Garder les séparateurs internes */
+        display: block !important; /* Garde les lignes de séparation à droite */
     }
 
     .separateur1 {
@@ -369,40 +373,45 @@ html, body {
     }
 
     .boutons {
-        flex-direction: row;
+        flex-direction: row !important;
         justify-content: space-around;
+        gap: 0;
         font-size: 2rem;
     }
 
-    /* FIX BANNIÈRE MOBILE : Conserve l'alignement en ligne (Photo à gauche, Texte à droite) */
+    /* FIX BANNIÈRE MOBILE : Aligne la photo et le texte sur la même ligne */
     .presentation {
+        display: flex !important;
         flex-direction: row !important; 
-        gap: 1.5rem;
+        gap: 1rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         padding: 0 1rem;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
-    .imgPresentation {
-        width: 30% !important; /* Réduit la colonne de l'image */
-        display: flex;
+    /* Cible à la fois imgPresentation et la classe flip-container de ton JSX */
+    .imgPresentation,
+    .flip-container {
+        width: 35% !important; 
+        display: flex !important;
         justify-content: center;
     }
 
     .flipper {
-        width: 100% !important; /* L'avatar s'adapte à sa colonne */
+        width: 100% !important; 
         margin-left: 0 !important; 
     }
 
     .txtPresentation {
-        width: 70% !important;
-        align-items: flex-start !important; /* Aligne le texte à gauche */
+        width: 65% !important;
+        align-items: flex-start !important; /* Aligne le Nom et le Prénom à gauche de sa zone */
         justify-content: center;
     }
 
     .name {
-        font-size: 2rem !important; /* Ajustement de taille identique au screenshot */
+        font-size: 1.8rem !important; 
         margin-right: 0 !important; 
         text-align: left !important;
     }
@@ -414,21 +423,23 @@ html, body {
         margin-top: 0.2rem;
     }
 
+    /* Liste des badges tech sous la photo et le texte */
     .stacklist {
+        display: flex !important;
         flex-direction: row !important;
-        flex-wrap: wrap; 
-        justify-content: flex-start !important;
+        flex-wrap: wrap !important; 
+        justify-content: center !important;
         gap: 0.4rem;
-        padding: 0;
+        padding: 0 1rem;
         margin-top: 0.6rem;
     }
 
     .stack {
-        font-size: 0.65rem !important; /* Badges plus discrets pour tenir sur la ligne */
-        padding: 0.2rem 0.5rem !important; 
+        font-size: 0.75rem !important; 
+        padding: 0.3rem 0.6rem !important; 
     }
 
-    /* Boutons sous la bannière */
+    /* Boutons de navigation (Mes Réalisations / Mon CV) */
     .btn {
         flex-direction: row !important; 
         gap: 1rem;
@@ -436,13 +447,13 @@ html, body {
     }
 
     .navbtn {
-        width: 45%; 
-        font-size: 1rem;
+        width: 48% !important; 
+        font-size: 0.95rem;
         text-align: center;
         padding: 0.5rem !important;
     }
 
-    /* MASQUAGE DES FLÈCHES MANTINE CAROUSEL SU MOBILE */
+    /* MASQUAGE DES FLÈCHES MANTINE CAROUSEL SUR MOBILE */
     .mantine-Carousel-control {
         display: none !important;
     }
