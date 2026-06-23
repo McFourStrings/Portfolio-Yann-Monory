@@ -200,10 +200,16 @@ const Projects = () => {
 
                                 <h3 className="titres">Expériences</h3>
 
+                                <h4 className="SousTitres">Juin 2026 à Août 2026</h4>
+                                <ul>
+                                    <li className="dot">
+                                        Stage de développeur web et web mobile - Alliance Digitale, Marly
+                                    </li>
+                                </ul>
                                 <h4 className="SousTitres">Mai 2019 à Décembre 2025</h4>
                                 <ul>
-                                    <li>
-                                        Titulaire aide médico-psychologique, IME Les Deux Rives de Valenciennes
+                                    <li className="dot">
+                                        Titulaire aide médico-psychologique - IME Les Deux Rives de Valenciennes
                                     </li>
                                     <li className="experiences">
                                         → Mise en place d'activités pédagogiques adaptées aux besoins et capacités des enfants
@@ -218,7 +224,7 @@ const Projects = () => {
 
                                 <h4 className="SousTitres">2017 à 2019</h4>
                                 <ul>
-                                    <li>
+                                    <li className="dot">
                                         Remplaçant aide médico-psychologique au sein de diverses structures médico-sociales
                                     </li>
                                 </ul>

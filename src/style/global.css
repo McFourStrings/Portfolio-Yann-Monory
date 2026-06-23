@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: #0B0A0C !important;
@@ -12,10 +13,10 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; 
+    z-index: -1;
 }
 
-.copy{
+.copy {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +27,14 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #170328;
+    background: linear-gradient(
+    145deg,
+    #050505 0%,
+    #25093D 40%,
+    #170328 75%, 
+    #0F001A 100%
+);
+background-attachment: fixed;
     border-bottom: 2px solid #800080;
 }
 
@@ -50,7 +58,7 @@ html, body {
 
 .imgPresentation {
     width: 50%;
-    perspective: 1000px; 
+    perspective: 1000px;
 }
 
 .flipper {
@@ -66,14 +74,15 @@ html, body {
     transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; 
+    -webkit-backface-visibility: hidden;
 }
 
 .front {
@@ -92,7 +101,7 @@ html, body {
     border: 3px solid #800080;
     border-radius: 200px;
     background-color: #0B0A0C;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .name,
@@ -103,13 +112,13 @@ html, body {
 .name {
     font-size: 4rem;
     margin-right: 20%;
-    color: #F4F2F7 !important; 
+    color: #F4F2F7 !important;
 }
 
 .job {
     font-size: 2rem;
     margin-right: 20%;
-    color: #F4F2F7 !important; 
+    color: #F4F2F7 !important;
 }
 
 .stacklist {
@@ -128,14 +137,14 @@ html, body {
     text-align: center;
 }
 
-.btn{
+.btn {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.navbtn{
+.navbtn {
     font-size: 1.3rem;
     border: 2px solid #170328;
     background-color: #A000A0;
@@ -145,15 +154,15 @@ html, body {
     transition: 0.5s;
 }
 
-.navbtn:hover{
+.navbtn:hover {
     background-color: #800080;
     scale: 1.05;
 }
 
 .carousel-container {
-    max-width: 1250px; 
-    margin: 80px auto;  
-    padding: 0 60px;   
+    max-width: 1250px;
+    margin: 80px auto;
+    padding: 0 60px;
     box-sizing: border-box;
 }
 
@@ -180,7 +189,14 @@ html, body {
     display: flex;
     justify-content: center;
     color: #F4F2F7;
-    background-color: #170328;
+   background: linear-gradient(
+    145deg,
+    #050505 0%,
+    #25093D 40%,
+    #170328 75%, 
+    #0F001A 100%
+);
+background-attachment: fixed;
     width: 80%;
     margin: 3rem auto 0;
     padding: 2rem;
@@ -193,7 +209,14 @@ html, body {
 }
 
 .cv {
-    background-color: #170328;
+    background: linear-gradient(
+    145deg,
+    #050505 0%,
+    #25093D 40%,
+    #170328 75%, 
+    #0F001A 100%
+);
+background-attachment: fixed;
     width: 80%;
     margin: 0 auto 4rem;
     padding: 2rem;
@@ -219,7 +242,12 @@ html, body {
 
 .right {
     flex: 1;
-    background-color: #A000A0;
+    background: linear-gradient(145deg,
+            #050505 0%,
+            #25093D 40%,
+            #A000A0 75%,
+            #170328 100%);
+    background-attachment: fixed;
     color: #F4F2F7;
     padding: 2rem;
     border-radius: 10px;
@@ -275,6 +303,7 @@ html, body {
 
 .experiences {
     margin-left: 1rem;
+    list-style: none;
 }
 
 .separateur {
@@ -315,8 +344,8 @@ html, body {
     .projects .stacklist {
         display: flex !important;
         flex-direction: row !important;
-        flex-wrap: wrap !important; 
-        justify-content: center !important; 
+        flex-wrap: wrap !important;
+        justify-content: center !important;
         gap: 0.5rem !important;
         padding: 0 1rem !important;
         margin: 1rem auto 0 !important;
@@ -324,13 +353,13 @@ html, body {
     }
 
     .projects .stack {
-        font-size: 0.75rem !important; 
-        padding: 0.3rem 0.6rem !important; 
+        font-size: 0.75rem !important;
+        padding: 0.3rem 0.6rem !important;
     }
 
     .projects .presentation {
         display: flex !important;
-        flex-direction: row !important; 
+        flex-direction: row !important;
         gap: 1.5rem !important;
         margin-top: 1.5rem !important;
         margin-bottom: 1.5rem !important;
@@ -341,50 +370,50 @@ html, body {
 
     .projects .imgPresentation,
     .projects .flip-container {
-        width: 30% !important; 
+        width: 30% !important;
         display: flex !important;
         justify-content: center !important;
     }
 
     .projects .flipper {
-        width: 100% !important; 
-        margin-left: 0 !important; 
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 
     .projects .txtPresentation {
         width: 70% !important;
-        align-items: flex-start !important; 
+        align-items: flex-start !important;
         justify-content: center !important;
     }
 
     .projects .name {
-        font-size: 1.8rem !important; 
-        margin-right: 0 !important; 
+        font-size: 1.8rem !important;
+        margin-right: 0 !important;
         text-align: left !important;
     }
 
     .projects .job {
-        font-size: 1.1rem !important; 
+        font-size: 1.1rem !important;
         margin-right: 0 !important;
         text-align: left !important;
     }
 
     .projects .btn {
         display: flex !important;
-        flex-direction: row !important; 
+        flex-direction: row !important;
         gap: 1rem !important;
         padding: 0.5rem 1rem 1.5rem !important;
     }
 
     .projects .navbtn {
-        width: 48% !important; 
+        width: 48% !important;
         font-size: 0.95rem !important;
         text-align: center !important;
         padding: 0.5rem !important;
     }
 
 
- 
+
 
     .projects .apropos,
     .projects .cv {
@@ -397,7 +426,7 @@ html, body {
     .projects .row,
     .projects .cv .row {
         display: flex !important;
-        flex-direction: column !important; 
+        flex-direction: column !important;
         gap: 2rem !important;
         width: 100% !important;
     }
@@ -405,7 +434,7 @@ html, body {
     .projects .left,
     .projects .right {
         width: 100% !important;
-        flex: none !important; 
+        flex: none !important;
         box-sizing: border-box !important;
     }
 
@@ -420,22 +449,22 @@ html, body {
     .projects .comptech,
     .projects .comptrans {
         width: 48% !important;
-        align-items: flex-start !important; 
+        align-items: flex-start !important;
     }
 
     .projects .competences .SousTitres {
-        font-size: 0.9rem !important; 
+        font-size: 0.9rem !important;
         white-space: normal !important;
     }
 
     .projects .sepvert {
-        display: block !important; 
+        display: block !important;
         border-left: 1px solid #800080 !important;
         align-self: stretch !important;
     }
 
     .projects .right {
-        text-align: left !important; 
+        text-align: left !important;
     }
 
     .projects .separateur1 {
@@ -452,17 +481,22 @@ html, body {
         display: none !important;
     }
 }
+
 .cyber-canvas-layer {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
-    z-index: 0 !important; 
-    pointer-events: none; 
+    z-index: 0 !important;
+    pointer-events: none;
 }
 
-.intro, .carousel-container, .apropos, .cv, .copy {
+.intro,
+.carousel-container,
+.apropos,
+.cv,
+.copy {
     position: relative !important;
     z-index: 2 !important;
 }
