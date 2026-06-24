@@ -203,7 +203,7 @@ const Projects = () => {
                                 <h4 className="SousTitres">Juin 2026 à Août 2026</h4>
                                 <ul>
                                     <li className="dot">
-                                        Stage de développeur web et web mobile - Alliance Digitale, Marly
+                                        Stage de développeur web et web mobile - Alliance Digital, Marly
                                     </li>
                                 </ul>
                                 <h4 className="SousTitres">Mai 2019 à Décembre 2025</h4>
