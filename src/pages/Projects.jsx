@@ -205,6 +205,9 @@ const Projects = () => {
                                     <li className="dot">
                                         Stage de développeur web et web mobile - Alliance Digital, Marly
                                     </li>
+                                    <li class="experiences">→ Initiation à PHP Symfony et développement de fonctionnalités </li>
+                                    <li class="experiences">→ Réalisation de sites web et applications web personnalisés </li>
+                                    <li class="experiences">→ Gestion et requêtage de bases de données (SQL, DQL) </li>
                                 </ul>
                                 <h4 className="SousTitres">Mai 2019 à Décembre 2025</h4>
                                 <ul>
