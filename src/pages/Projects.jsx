@@ -132,12 +132,7 @@ const Projects = () => {
                         <main>
                             <h3 className="titres">A propos</h3>
                             <p>
-                                Après 10 ans en tant qu'aide médico psychologique, je me suis
-                                réorienté vers le métier de développeur web et web mobile.
-                                Assidu, j'aime résoudre des problèmes en apprenant. Appréciant
-                                aussi bien le travail en équipe qu'en autonomie, je suis prêt à
-                                mettre en oeuvre toutes mes compétences pour le bien de
-                                l'entreprise.
+                                Actuellement en préparation pour le titre professionnel de Concepteur Développeur  d’Applications, je recherche une alternance de deux ans, avec un rythme de trois semaines en entreprises pour une semaine en formation.
                             </p>
                         </main>
                     </div>
@@ -179,10 +174,13 @@ const Projects = () => {
                                 </div>
 
                                 <h3 className="titres">Formations</h3>
-
+                                <h4 className="SousTitres">Septembre 2026</h4>
+                                <li className="dot">
+                                    Formation en vue d’obtenir de Titre Professionel de Concepteur Développeur d’Applications - ForEach Academy, Wasquehal
+                                </li>
                                 <h4 className="SousTitres">Janvier 2026 à Aujourd'hui</h4>
                                 <li className="dot">
-                                    Formation en vu de l'obtention du Titre Professionnel Développeur Web et Web Mobile - ForEach Academy, Wasquehal
+                                    Titre Professionnel Développeur Web et Web Mobile - ForEach Academy, Wasquehal
                                 </li>
                                 <li className="dot">
                                     Développement Full stack d'une application web ou web mobile sécurisée
